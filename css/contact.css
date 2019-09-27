@@ -1,0 +1,296 @@
+*
+{
+  margin: 0;
+  padding:0;
+}
+
+body
+{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+ h1,h2,h3,h4,h5,h6
+ {
+  padding: 5rem 2rem 1.5rem 2rem;
+  color: grey;
+ }
+
+ p
+ {
+    padding: 1rem 2rem 1rem 2rem;
+ }
+
+a
+{
+  text-decoration: none;
+  color: grey;
+}
+
+nav
+{
+  background-color:#fff;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 2.2rem 2.2rem;
+}
+
+nav > a
+{
+  color: black;
+  font-weight: bold;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.7rem;
+  padding: 0 0 0 7rem;
+}
+nav > a:nth-child(1):hover
+{
+  color: grey;
+}
+
+nav > ul > li 
+{
+  display: inline-block;
+  padding: 0 0.2rem 0 0.2rem;
+  font-size: 0.8rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+nav > ul > li a:hover
+{
+  color: black;
+}
+
+nav > ul 
+{
+  grid-column: 2/span 4;
+}
+
+header
+{
+ position: relative;
+ background-image: url("../img/contact.jpg");              
+ height: 100vh;
+ background-size: cover;
+ background-position: center center;
+ display:grid;
+ grid-template-columns: 1fr;
+ align-items:center;
+ justify-items:center;
+}
+
+#img-cover
+{
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ background-color: rgba(0, 0, 0, 0.15);                  
+ z-index:1;
+}
+
+header > p 
+{
+  position:absolute;
+  font-size:3.8rem;
+  color:#fff;
+  z-index: 2;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#main
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+}
+
+
+
+#contact-us
+{
+   font-family: 'Work Sans', sans-serif;
+   padding: 6rem 0 0 6rem;
+}
+#contact-us  p:nth-child(1)
+{
+  color: black;
+  font-size: 2.2rem;
+  font-family: 'Cardo', serif;
+}
+#contact-us  p
+{
+  font-size: 0.9rem;
+  color: grey;
+}
+
+#info
+{
+   grid-column: 2/span 2;
+}
+
+.name
+{
+ width:100%; 
+ height:2.5rem;
+ letter-spacing: -5px;
+}
+
+#info
+{
+  padding: 6rem 0 0 5rem;
+}
+
+#info > form label
+{
+  color:grey;
+  font-size: 0.8rem;
+}
+
+#info > form p
+{
+  color: grey;
+  font-size: 0.7rem;
+  padding: 0 0 0 0;
+}
+
+#info > form p > span
+{
+  padding: 0 14.3rem 0 0;
+}
+
+#email
+{
+  padding-right :3rem;
+ width:100%; 
+ height:2rem;
+ letter-spacing: -5px;
+}
+#message
+{
+ width:100%; 
+ height:5.5rem;
+ letter-spacing: -5px;
+}
+
+.btn
+{
+  color: #000000;
+  background-color:#fff;
+  font-size: 0.9rem;
+  padding: 0.8rem 2rem 0.8rem 2rem;
+  border: 2px solid #000000;
+}
+.btn:hover
+{
+  background-color: #000000;
+  color: #fff;
+}
+
+#employee
+{
+  padding: 6rem 8rem 5rem 0;
+}
+
+#employee p:nth-child(1)
+{
+  font-family: 'Work Sans', sans-serif;
+  color:#000000;
+  font-size: 1.3rem;
+}
+
+#employee p
+{
+  font-size: 0.9rem;
+  color: grey;
+  padding: 0 0 0 0;
+}
+
+#employee h4
+{
+  color: #000000;
+  font-size: 0.9rem;
+  padding: 0 0 0 0;
+}
+
+footer
+{
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0.7rem 0 2.5rem 0;
+  border-top: solid 0.3px #d4d0d0;
+}
+
+footer a:hover
+{
+  color: #000000;
+}
+
+
+@media(max-width:768px)
+{
+
+nav > a
+{
+  padding: 0 5rem 0 0;
+}
+
+#info
+{
+   grid-column: 2/span 4;
+}
+
+body
+{
+  background-color:aqua;
+}
+
+}
+
+
+
+
+@media(max-width:500px)
+{
+  nav
+{
+  padding: 1rem 2.2rem;
+}
+ 
+nav > a
+{
+  grid-column: 1/span 6;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 0 1rem 0.3rem;
+}
+
+nav > ul > li 
+{
+  display: block;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+}
+
+header
+{
+height: 60vh;
+}
+
+header > p
+{
+ line-height: 10vh;
+ padding: 2rem 0 0 0;
+}
+
+footer > p
+{
+  padding:4rem 0 4rem 0;
+}
+
+body
+{
+  background-color:bisque;
+}
+}

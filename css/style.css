@@ -1,0 +1,315 @@
+*
+{
+  margin: 0;
+  padding:0;
+}
+
+body
+{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+ h1,h2,h3,h4,h5,h6
+ {
+  padding: 5rem 2rem 1.5rem 0;
+  color: grey;
+ }
+
+ p
+ {
+    padding: 1rem 2rem 1rem 2rem;
+ }
+
+a
+{
+  text-decoration: none;
+  color: grey;
+}
+
+nav
+{
+  background-color:#fff;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 2.2rem 2.2rem;
+}
+
+nav > a
+{
+  color: black;
+  font-weight: bold;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.7rem;
+  padding: 0 0 0 7rem;
+
+}
+nav > a:nth-child(1):hover
+{
+  color: grey;
+}
+
+nav > ul > li 
+{
+  display: inline-block;
+  padding: 0 0.2rem 0 0.2rem;
+  font-size: 0.8rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+nav > ul > li a:hover
+{
+  color: black;
+}
+
+nav > ul 
+{
+  grid-column: 2/span 4;
+}
+
+header
+{
+ position: relative;
+ background-image: url("../img/cover.jpg");              
+ height: 100vh;
+ background-size: cover;
+ background-position: center center;
+ display:grid;
+ grid-template-columns: 1fr;
+ align-items:center;
+ justify-items:center;
+}
+
+#img-cover
+{
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ background-color: rgba(0, 0, 0, 0.15);                  
+ z-index:1;
+}
+
+header > p 
+{
+  position:absolute;
+  font-size:3.8rem;
+  color:#fff;
+  z-index: 2;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#intro
+{
+  width: 100%;
+	height: auto;
+}
+
+#intro > div > p
+{
+  font-size: 2.3rem;
+  text-align: center;
+  color: grey;
+  padding: 8rem 8rem;
+  font-family: 'Cardo', serif;
+  line-height: 4vw;
+}   
+
+.btn
+{
+  color: #000000;
+  background-color:#fff;
+  font-weight: bold;
+  font-size: 0.7rem;
+  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  border: 2px solid #000000;
+  border-radius: 3px;
+}
+
+.btn:hover
+{
+  background-color: #000000;
+  color: #fff;
+}
+
+#home-style
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 9rem 0 9rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+ #home-style  p
+ {
+    padding: 1rem 0 1.8rem 0;
+    text-align: left;
+    color: grey;
+    font-size: 0.9rem;
+ }
+
+ #home-style  img
+ {
+   width:100%;
+   height:auto;
+ }
+
+#home-style div
+{
+  padding: 0 1.1rem 6rem 1rem;
+  border-top: solid 0.3px #d4d0d0;
+  border-bottom: solid 0.3px #d4d0d0;
+}
+
+#test
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3rem 9rem 2rem 9rem;
+  color: grey;
+  border-bottom: solid 0.3px #d4d0d0;
+}
+
+#test div
+{
+   padding: 0 1.1rem 3rem 1rem;
+}
+
+#test > div:nth-child(1)
+{
+   grid-column: 1/span 2;
+}
+
+#test > div:nth-child(1) > p
+{
+  font-family: 'Courgette', cursive;
+  padding: 3rem 0 3rem 0;
+  font-size:1.5rem;
+}
+
+#test > div:nth-child(2)  p
+{
+  font-family:'Work Sans', sans-serif;
+  font-size:0.9rem;
+  color:#000000;
+  padding: 1.3rem 0 0 0;
+}
+
+#test > div:nth-child(2)  a
+{
+  font-family:'Work Sans', sans-serif;
+  font-size: 0.9rem;
+  color: grey;
+  display: block;
+}
+
+#test > div:nth-child(2)  a:hover
+{
+  color: #000000;
+}
+
+footer
+{
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0.7rem 0 2.5rem 0;
+}
+
+footer a:hover
+{
+  color: #000000;
+}
+
+
+
+
+
+
+@media(max-width:768px)
+{
+
+nav > a
+{
+  padding: 0 5rem 0 0;
+}
+
+#intro > div > p
+{
+  line-height: 6vw;
+}
+
+#home-style
+{
+  padding: 0;
+}
+
+#test
+{
+  padding: 4rem 0 6rem 0;
+}
+
+}
+
+
+@media(max-width:500px)
+{
+  nav
+{
+  padding: 1rem 2.2rem;
+}
+ 
+nav > a
+{
+  grid-column: 1/span 6;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 0 1rem 0.3rem;
+}
+
+nav > ul > li 
+{
+  display: block;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+}
+
+header
+{
+height: 60vh;
+}
+
+header > p
+{
+ line-height: 10vh;
+ padding: 2rem 2rem 0 2rem;
+}
+
+#intro > div > p
+{
+  padding: 3rem 0 2rem 0;
+  line-height: 7vh;
+}
+
+#home-style
+{
+  display: block;
+}
+
+#test
+{
+  display: block;
+  padding: 0;
+}
+
+#test > div:nth-child(2) > p
+{
+  margin: 0 0 0.3rem 0;
+}
+
+footer > p
+{
+  padding:4rem 0 4rem 0;
+}
+
+}
